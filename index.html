@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension-Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <img src="./Assets/images/logo.svg" alt="Logo" id="logo">
+         <button id="toggleTheme">
+            <img src="./Assets/images/icon-moon.svg" alt="">
+            <img src="./Assets/images/icon-sun.svg" alt="">
+        </button>
+    </header>
+
+    <div class="container">
+        <!-- filter Buttons -->
+         <div id="filter-button">
+            <h2>Extensions List</h2>
+            <div id="filter-btn">
+                <button class="filter-btn active" data-name="all">All</button>
+                <button class="filter-btn" data-name="active">Active</button>
+                <button class="filter-btn" data-name="inactive">Inactive</button>
+                <!-- <button class="filter-btn" data-filter="audio">Audio</button>    -->
+            </div>
+         </div>
+
+        <!-- Gallery -->
+         <div id="filterable-cards">
+                <div class="card" id="card1" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-devlens.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3> DevLens</h3>
+                        <p>Quickly inspect page layouts and visualize element boundaries.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb1-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb1-6">
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card" id="card2" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-style-spy.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>StyleSpy</h3>
+                        <p>Instantly analyze and copy CSS from any webpage element.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb2-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb2-6">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card" id="card3" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-speed-boost.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>SpeedBoost</h3>
+                        <p>Optimizes browser resource usage to accelerate page loading.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb3-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb3-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card4" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-json-wizard.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>JSONWizard</h3>
+                        <p> Formats, validates, and prettifies JSON responses in-browser.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb4-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb4-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card5" data-name="all">
+                    <div class="card-up">
+                            <div class="cardup-left">
+                            <img src="./assets/images/logo-tab-master-pro.svg" alt="">
+                            </div>
+                            <div class="cardup-right">
+                            <h3>TabMaster Pro</h3>
+                            <p>Organizes browser tabs into groups and sessions.</p>
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <button>Remove</button>
+                            <div class="checkbox-wrapper-6">
+                            <input class="tgl tgl-light" id="cb5-6" type="checkbox"/>
+                            <label class="tgl-btn" for="cb5-6">
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="card" id="card6" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-viewport-buddy.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>ViewportBuddy</h3>
+                        <p>Simulates various screen resolutions directly within the browser.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb6-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb6-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id ="card7" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-markup-notes.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3> Markup Notes</h3>
+                        <p> Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb1-7" type="checkbox"/>
+                        <label class="tgl-btn" for="cb7-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card8" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-grid-guides.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>GridGuides</h3>
+                        <p> Overlay customizable grids and alignment guides on any webpage.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb8-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb8-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card9" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-palette-picker.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>Palette Picker</h3>
+                        <p> Instantly extracts color palettes from any webpage.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb9-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb9-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card10" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-link-checker.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3> LinkChecker</h3>
+                        <p>Scans and highlights broken links on any page.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb10-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb10-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card11" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-dom-snapshot.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3>  DOM Snapshot</h3>
+                        <p>Capture and export DOM structures quickly.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb11-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb11-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card12" data-name="all">
+                    <div class="card-up">
+                        <div class="cardup-left">
+                        <img src="./assets/images/logo-console-plus.svg" alt="">
+                        </div>
+                        <div class="cardup-right">
+                        <h3> ConsolePlus</h3>
+                        <p>Enhanced developer console with advanced filtering and logging.</p>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <button>Remove</button>
+                        <div class="checkbox-wrapper-6">
+                        <input class="tgl tgl-light" id="cb12-6" type="checkbox"/>
+                        <label class="tgl-btn" for="cb12-6">
+                        </div>
+                    </div>
+                </div>
+
+         </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
