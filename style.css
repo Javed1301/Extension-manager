@@ -43,23 +43,23 @@ html {
 
 @font-face {
     font-family: a;
-    src: url(./Assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
 }
 @font-face {
     font-family: b;
-    src: url(./Assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf); 
+    src: url(./assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf); 
 }
 @font-face {
     font-family: c;
-    src: url(./Assets/fonts/static/NotoSans-Bold.ttf);
+    src: url(./assets/fonts/static/NotoSans-Bold.ttf);
 }
 @font-face {
     font-family: d;
-    src: url(./Assets/fonts/static/NotoSans-Medium.ttf);
+    src: url(./assets/fonts/static/NotoSans-Medium.ttf);
 }
 @font-face {
     font-family: e;
-    src: url(./Assets/fonts/static/NotoSans-Regular.ttf);
+    src: url(./assets/fonts/static/NotoSans-Regular.ttf);
 }
 
 body {
